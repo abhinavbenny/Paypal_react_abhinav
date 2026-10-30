@@ -1,0 +1,98 @@
+/* ===== Hero section ===== */
+.hero {
+  text-align: center;
+  padding: 50px 20px 70px 20px;
+}
+
+/* The grey pill that holds the two tabs */
+.tabs {
+  display: inline-flex;
+  background-color: #eceef5;
+  border-radius: 40px;
+  padding: 5px;
+  margin-bottom: 60px;
+}
+
+.tab {
+  border: none;
+  background: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-family: inherit;
+  color: #555555;
+  cursor: pointer;
+}
+
+/* The selected tab becomes a white pill */
+.tab.active {
+  background-color: white;
+  color: #111111;
+  font-weight: bold;
+}
+
+/* Big heading */
+.hero-title {
+  font-size: 80px;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+
+.hero-text {
+  font-size: 19px;
+  max-width: 750px;
+  margin: 0 auto 35px auto;
+  line-height: 1.5;
+}
+
+/* Two buttons side by side */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-btn {
+  padding: 16px 30px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero-btn-light {
+  background-color: #eceef5;
+  color: #111111;
+}
+
+.hero-btn-dark:hover {
+  background-color: #333333;
+}
+
+.hero-btn-light:hover {
+  background-color: #dcdfea;
+}
+
+/* Smaller screens (phones) */
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
